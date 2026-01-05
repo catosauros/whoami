@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maria Ter-Minasyan – Programming & Robotics Educator</title>
+  <style>
+    :root {
+      --bg: #722b62;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #f838a8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #020617, var(--bg));
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+
+    header {
+      margin-bottom: 4rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0 0 0.5rem 0;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 700px;
+    }
+
+    section {
+      margin-bottom: 3.5rem;
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.75rem;
+    }
+
+    .card {
+      background: rgba(17, 24, 39, 0.8);
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill {
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Maria Ter-Minasyan</h1>
+      <p>
+        Hi! I'm a freelance workshop lead based in Berlin. I specialize in programming and robotics education
+        for teenagers. I design and deliver hands-on, engaging learning experiences
+        that make technology approachable and fun. My workshops are available in both German and English.
+      </p>
+    </header>
+
+    <section id="about">
+      <h2>Who I Am</h2>
+      <div class="card">
+        <p>
+          I'm a freelance educator and workshop leader with a passion for teaching
+          programming and robotics to teenagers. I focus on practical, project-based
+          learning that builds confidence, creativity, and problem-solving skills.
+        </p>
+        <p>
+          I enjoy translating complex technical concepts into clear, interactive
+          activities that students can immediately apply.
+        </p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <ul>
+          <li><strong>B.Sc. Technische Informatik</strong> – Technische Universität Berlin (2019-2024)</li>
+          <li><strong>M.Sc. Computer Engineering</strong> – Technische Universität Berlin (2024-present)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="card">
+        <ul>
+          <li>
+            <strong>Freelance Workshop Lead</strong> – Programming & Robotics (2024–Present)<br />
+            Designed and led workshops for teenagers covering topics such as coding
+            fundamentals, simple game programming, microcontroller basics, robotics projects.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills & Topics</h2>
+      <div class="card">
+        <div class="skills">
+          <span class="skill">Arduino / Microcontroller Programming</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">Problem-Based Learning</span>
+          <span class="skill">Workshop Design</span>
+          <span class="skill">Teen Education</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Say hi!</h2>
+      <div class="card">
+        <p>
+          Interested in workshops, courses, or collaborations?
+        </p>
+        <p>
+          Email: <a href="mailto:your@email.com">maria.terminasyan@gmail.com</a><br />
+          <a href="https://www.linkedin.com/in/maria-ter-minasyan-b1766a1b5/">LinkedIn</a> / <a href="https://github.com/catosauros">GitHub</a>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Maria Ter-Minasyan
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
